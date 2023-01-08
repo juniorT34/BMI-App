@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Lato', Helvetica, sans-serif;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    padding: clamp(20px, 5vw, 50px) 10px 10px;
+}
+.container{
+    max-width: 850px;
+    background: #f1f1f1;
+    border: 1px solid #36363692;
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 30%);
+}
+.container h1{
+    text-align: center;
+    font-weight: 400;
+}
+.container h1 span{
+    font-weight: 700;
+}
+form{
+    margin: 2rem auto ;
+}
+form .values{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    align-items: center;
+}
+input{
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    border-bottom: 1px solid #333333;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+}
+
+input::placeholder{
+    font-size: 1rem;
+}
+
+button{
+    display: block;
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    margin: 3rem auto ;
+    background: #fabe33;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.result{
+    text-align: center;
+}
+.result h2{
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+.result p{
+    width: 350px;
+    margin: 0 auto
+}
+@media screen and (max-width: 810px) {
+    form .values{
+        grid-template-columns: 1fr;
+    }
+    input{
+        width: 90%;
+    }
+    
+}
+

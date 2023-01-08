@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul IMC</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- title -->
+        <h1>BMI <span>Calculation</span></h1>
+        <form method="get" action="#">
+            <div class="values">
+
+                <!-- height -->
+                <div class="height">
+                    <label for="height">Your height in centimeter</label><br>
+                    <input type="number" id="height" placeholder="Your height in centimeter">
+                </div>
+                <!-- weight -->
+                <div class="weight">
+                    <label for="weight">Your weight in kg</label><br>
+                    <input type="number" id="weight" placeholder="Your weight in kg">
+                </div>
+            </div>
+            <button id="button">Calculate BMI</button>
+
+        </form>
+
+        <div class="result">
+            <h2 id="result">0</h2>
+            <p id="state">Awaiting result...</p>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
